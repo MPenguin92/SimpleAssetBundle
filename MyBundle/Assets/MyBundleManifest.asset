@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ef820d4a9cc4176967b47efa4a8a31b, type: 3}
+  m_Name: MyBundleManifest
+  m_EditorClassIdentifier: 
+  bundles:
+  - hash: d22c96f94f5ca52fcaa78e0fee2e6cd7
+    name: common/shader.ab
+    dependencies: []
+  - hash: ce2c5057778499c5ed8436d9c08ae593
+    name: prefab/1.ab
+    dependencies:
+    - common/shader.ab
+  versionCode: 0

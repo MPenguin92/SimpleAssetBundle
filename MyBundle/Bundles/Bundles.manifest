@@ -1,0 +1,11 @@
+ManifestFileVersion: 0
+CRC: 3846771810
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: prefab/1.ab
+      Dependencies:
+        Dependency_0: common/shader.ab
+    Info_1:
+      Name: common/shader.ab
+      Dependencies: {}

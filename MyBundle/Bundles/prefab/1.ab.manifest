@@ -1,0 +1,44 @@
+ManifestFileVersion: 0
+CRC: 33827938
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ce2c5057778499c5ed8436d9c08ae593
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2f8ebc181fd8638711914a09541efd42
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: e5a6d00ee1ed33c39af2c92d69b93613
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Prefab/1/i.tga
+- Assets/Prefab/1/m.mat
+- Assets/Prefab/1/p.prefab
+- Assets/Prefab/1/f.FBX
+Dependencies:
+- F:/MyBundle/Bundles/common/shader.ab
