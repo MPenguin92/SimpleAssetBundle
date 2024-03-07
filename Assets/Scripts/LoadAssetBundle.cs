@@ -85,11 +85,11 @@ public static class LoadAssetBundle
         if (bundleData != null)
         {
             var myLoadedAssetBundle
-                = LoadBundle(Path.Combine(DefaultBundleRootPath, bundleData.name));
+                = LoadBundle(bundleData.name);
             int deCount = bundleData.dependencies.Count;
             for (int i = 0; i < deCount; i++)
             {
-                LoadBundle(Path.Combine(DefaultBundleRootPath, bundleData.dependencies[i]));
+                LoadBundle(bundleData.dependencies[i]);
             }
 
             return myLoadedAssetBundle;
@@ -100,6 +100,7 @@ public static class LoadAssetBundle
 
     public static AssetBundle LoadBundle(string bundlePath)
     {
+        bundlePath = Path.Combine(DefaultBundleRootPath, bundlePath);
         if (sPath2BundleMapping.TryGetValue(bundlePath, out BundleReference bundleReference))
         {
             bundleReference.referenceCount++;
@@ -107,7 +108,7 @@ public static class LoadAssetBundle
         }
 
         var myLoadedAssetBundle
-            = AssetBundle.LoadFromFile(Path.Combine(DefaultBundleRootPath, bundlePath));
+            = AssetBundle.LoadFromFile(bundlePath);
         if (myLoadedAssetBundle == null)
         {
             Debug.Log("Failed to load AssetBundle!");
